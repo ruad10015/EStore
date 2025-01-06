@@ -10,19 +10,25 @@ else
 {
     <p>Filtering by product name </p>
     <div style="display:flex;flex-direction:column;">
-        <a href="/admin/index?category=@Model.CurrentCategory&filterName=a-z&page=@Model.CurrentPage&filterPrice=@Model.FilterByPrice" style="cursor:pointer;">
+        <a href="/admin/index?category=@Model.CurrentCategory&filterName=a-z&page=@Model.CurrentPage&filterPrice=@Model.FilterByPrice"
+           style="display:inline-block; padding:10px 20px; background-color:#007BFF; color:white; text-decoration:none; border-radius:5px; border:none; cursor:pointer; text-align:center;">
             a-z
         </a>
-        <a href="/admin/index?category=@Model.CurrentCategory&page=@Model.CurrentPage&filterName=z-a&filterPrice=@Model.FilterByPrice" style="cursor:pointer;">
+
+        <a href="/admin/index?category=@Model.CurrentCategory&page=@Model.CurrentPage&filterName=z-a&filterPrice=@Model.FilterByPrice"
+           style="display:inline-block; padding:10px 20px; background-color:#007BFF;margin-top:5px; color:white; text-decoration:none; border-radius:5px; border:none; cursor:pointer; text-align:center;">
             z-a
         </a>
     </div>
     <p>Filtering by product price </p>
     <div style="display:flex;flex-direction:column;">
-        <a href="/admin/index?category=@Model.CurrentCategory&page=@Model.CurrentPage&filterName=@Model.FilterByName&filterPrice=lower" style="cursor:pointer;">
+        <a href="/admin/index?category=@Model.CurrentCategory&page=@Model.CurrentPage&filterName=@Model.FilterByName&filterPrice=lower"
+           style="display:inline-block; padding:10px 20px; background-color:#28A745; color:white; text-decoration:none; border-radius:5px; border:none; cursor:pointer; text-align:center;">
             Lower
         </a>
-        <a href="/admin/index?category=@Model.CurrentCategory&page=@Model.CurrentPage&filterName=@Model.FilterByName&filterPrice=higher" style="cursor:pointer;">
+
+        <a href="/admin/index?category=@Model.CurrentCategory&page=@Model.CurrentPage&filterName=@Model.FilterByName&filterPrice=higher"
+           style="display:inline-block; padding:10px 20px; background-color:#FFC107;margin-top:5px; color:white; text-decoration:none; border-radius:5px; border:none; cursor:pointer; text-align:center;">
             Higher
         </a>
     </div>
